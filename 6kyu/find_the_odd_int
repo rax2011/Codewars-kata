@@ -1,0 +1,22 @@
+/*
+ Given an array of positive integers. All numbers occur an even number of times except one number which occurs an odd number of times. 
+ Find the number in O(n) time & constant space.
+ */
+Public class Find_the_odd_int {
+	
+	
+	public static int findIt(int[] a) {
+		
+   for(int i = 0; i < a.length ; i++) {
+	   int count = 0;
+	   for(int j = i; j < a.length; j++) {
+		   if(a[i] == a[j])
+			   count++;
+	   }
+	   if(count % 2 != 0) {
+		   return a[i];
+	   }
+   }
+   return -1;
+}
+}
