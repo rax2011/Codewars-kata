@@ -1,4 +1,3 @@
-package give_me_a_diamond;
 import java.util.ArrayList;
 import java.util.List;
 public class Is_my_friend_cheating{
